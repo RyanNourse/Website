@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ryan Nourse's Website</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('https://www.pointloma.edu/sites/default/files/images/B42T6378b_1.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        header {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            position: absolute;
+            left: 17%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px 40px;
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+            padding: 30px 60px;
+            font-size: 18px;
+            cursor: pointer;
+            background-image: url('https://www.pointloma.edu/sites/default/files/images/B42T6378b_1.jpg');
+            transition: background-color 0.5s ease;
+        }
+        button:hover {
+            padding: 30px 60px;
+            color: gold;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        button img {
+            width: 36px;
+            height: 36px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+<header> Welcome to my Website </header>
+<div class="button-container">
+    <button onclick="window.location.href='AboutMe.html';" type="button">
+        <img src="/Users/ryan1/Desktop/AboutMeIcon.png" alt="User Icon" height="60px" width="60px"> About me
+    </button>
+    <button onclick="window.open('/Users/ryan1/Downloads/Thomas Ryan Nourse Updated Resume (1).docx', '_blank')" type="button">
+        <img src="/Users/ryan1/Desktop/ResumeIcon.png" alt="Resume Icon"> Resume
+    </button>
+    <button onclick="location.href='https://www.linkedin.com/in/ryan-nourse-030604252/'" type="button" target="_blank">
+        <img src="/Users/ryan1/Desktop/LinkedinIcon.jpg" alt="Linkedin Icon" > Linkedin
+    </button>
+    <button onclick="location.href='https://github.com/dashboard'" type="button" target="_blank">
+        <img src="/Users/ryan1/Desktop/GithubIcon.png" alt="GitHub Icon" > GitHub
+    </button>
+    <button onclick="window.location.href='GameFile.html';" type="button">
+        <img src="/Users/ryan1/Desktop/GameIcon.png" alt="Game Icon" > Game
+    </button>
+</div>
+</body>
+</html>
